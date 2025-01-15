@@ -1,30 +1,60 @@
-# React + TypeScript + Vite
+# Meal Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Meal Finder** es una aplicación web que muestra recetas utilizando la [TheMealDB API](https://www.themealdb.com/). Ofrece una vista amigable de recetas con detalles en inglés, permitiendo a los usuarios explorar diferentes platillos.
 
-Currently, two official plugins are available:
+## Características principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Exploración de recetas**: Consulta recetas disponibles en la API con información relevante como ingredientes, instrucciones y categorías.
+2. **Interfaz atractiva**: Diseñada utilizando Chakra UI para una experiencia moderna y consistente.
+3. **Responsividad parcial**: La aplicación se adapta a dispositivos de tamaño mediano, aunque en pantallas muy pequeñas puede perder funcionalidad.
+4. **Filtros y búsqueda**: Opciones para filtrar recetas por categoría o buscar por nombre.
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Dependencias principales
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: Biblioteca para construir interfaces de usuario.
+- **Chakra UI**: Sistema de componentes para un diseño consistente.
+- **Axios**: Manejo eficiente de peticiones HTTP.
+- **React Hook Form**: Manejo de formularios y validaciones.
+- **Framer Motion**: Animaciones modernas.
+- **React Icons**: Colección de iconos para mejorar la apariencia visual.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Instalación y configuración
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Sigue estos pasos para ejecutar la aplicación localmente:
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/recipe-finder.git
+   cd recipe-finder
+   ```
+
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+
+3. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+4. Abre tu navegador en [http://localhost:5173](http://localhost:5173) para explorar la aplicación.
+
+## Uso de la API
+
+La aplicación utiliza la [TheMealDB API](https://www.themealdb.com/) para obtener datos de recetas. No se requiere configuración adicional, ya que la aplicación está diseñada para consumir directamente la API.
+
+## Limitaciones
+
+- **Responsividad parcial**: Aunque la aplicación es responsiva en dispositivos medianos, puede no ser completamente funcional en pantallas extremadamente pequeñas.
+
+## Demo en línea
+
+Prueba la aplicación en: [Recipe Finder](https://mealfinderview.netlify.app/) *(Reemplaza con el enlace real si ya está desplegado)*.
+
+---
+
+Si tienes comentarios o deseas contribuir, no dudes en contactarme.
+
